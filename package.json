@@ -1,11 +1,15 @@
 {
-  "name": "@cui-react",
+  "name": "cui-react",
   "version": "0.0.1",
   "description": "A simple component library for React/NextJS, using TailwindCSS",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc"
   },
+  "files": [
+    "dist"
+  ],
   "author": {
     "name": "Agustin Avellaneda",
     "email": "agustind@duck.com"
