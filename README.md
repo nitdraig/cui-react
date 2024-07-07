@@ -30,6 +30,13 @@ First, install the package using npm:
 ```bash
 npm install cui-react
 ```
+Second, add this to tailwind.config.ts
+```bash
+  content: [
+    "./node_modules/cui-react/dist/**/*.{js,ts,jsx,tsx}",
+           ], 
+
+```
 ## Principles and Guidelines
 ### Simplicity
 Prioritize simplicity in all aspects of design. Eliminate unnecessary elements to maintain an intuitive user experience.
