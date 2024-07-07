@@ -1,5 +1,5 @@
 {
-  "name": "cui-react",
+  "name": "@cui-react",
   "version": "0.0.1",
   "description": "A simple component library for React/NextJS, using TailwindCSS",
   "main": "index.js",

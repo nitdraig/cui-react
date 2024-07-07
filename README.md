@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://cui.top/">
-    <img src="https://res.cloudinary.com/draig/image/upload/v1717633081/cui/iwzlpdbt3uclxt5mwll3.png" alt="CUI Logo" width="200" height="200">
+  <a href="https://cui.agustin.top/">
+    <img src="https://res.cloudinary.com/draig/image/upload/v1720318582/cui/qri5p1r8fwfp8wvfc6l0.png" alt="CUI Logo" width="200" height="200">
   </a>
 </p>
 
