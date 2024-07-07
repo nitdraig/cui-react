@@ -12,9 +12,9 @@
   <!-- <a href="https://docs.cui.top/"><strong>Explore CUI docs »</strong></a> -->
   <br>
   <br>
-  <a href="https://github.com/nitdraig/cui/issues">Report bug</a>
+  <a href="https://github.com/nitdraig/cui-react/issues">Report bug</a>
   ·
-  <a href="https://github.com/nitdraig/cui/issues">Request feature</a>
+  <a href="https://github.com/nitdraig/cui-react/issues">Request feature</a>
   ·
   <a href="https://agustin.top/">Creator Portfolio</a>
 </p>
