@@ -9,7 +9,7 @@
 <p align="center">
   Build Beautiful Interfaces with Ease
   <br>
-  <!-- <a href="https://docs.cui.top/"><strong>Explore CUI docs »</strong></a> -->
+<a href="https://cui.agustin.top/"><strong>Explore CUI docs »</strong></a>
   <br>
   <br>
   <a href="https://github.com/nitdraig/cui-react/issues">Report bug</a>
@@ -28,7 +28,7 @@
 First, install the package using npm:
 
 ```bash
-npm install @cui/react
+npm install cui-react
 ```
 ## Principles and Guidelines
 ### Simplicity
