@@ -1,0 +1,35 @@
+{
+  "name": "cui-react",
+  "version": "1.0.0",
+  "description": "A simple component library for React/NextJS, using TailwindCSS",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "author": {
+    "name": "Agustin Avellaneda",
+    "email": "agustind@duck.com"
+  },
+  "keywords": [
+    "react",
+    "tailwindcss",
+    "cui",
+    "component",
+    "library"
+  ],
+  "homepage": "https://cui.agustin.top",
+  "license": "ISC",
+  "dependencies": {
+    "class-variance-authority": "^0.7.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwindcss": "^3.4.4"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.39",
+    "typescript": "^5.5.3"
+  }
+}
