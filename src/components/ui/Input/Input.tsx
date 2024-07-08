@@ -1,6 +1,6 @@
 import React from "react";
 
-interface InputsProps {
+interface InputProps {
   name?: string;
   id?: string;
   labelText?: string;
@@ -8,7 +8,7 @@ interface InputsProps {
   pattern?: string;
 }
 
-const Inputs: React.FC<InputsProps> = ({
+const Input: React.FC<InputProps> = ({
   id,
   name,
   labelText,
@@ -36,4 +36,4 @@ const Inputs: React.FC<InputsProps> = ({
   );
 };
 
-export default Inputs;
+export default Input;

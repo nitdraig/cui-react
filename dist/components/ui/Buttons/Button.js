@@ -1,3 +1,4 @@
+"use strict";
 var __assign = (this && this.__assign) || function () {
     __assign = Object.assign || function(t) {
         for (var s, i = 1, n = arguments.length; i < n; i++) {
@@ -20,9 +21,14 @@ var __rest = (this && this.__rest) || function (s, e) {
         }
     return t;
 };
-import React from "react";
-import { cva } from "class-variance-authority";
-var buttonStyles = cva("rounded-md cursor-pointer py-2 px-4 text-white font-sm transition duration-300 ease-in-out", {
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = Button;
+var react_1 = __importDefault(require("react"));
+var class_variance_authority_1 = require("class-variance-authority");
+var buttonStyles = (0, class_variance_authority_1.cva)("rounded-md cursor-pointer py-2 px-4 text-white font-sm transition duration-300 ease-in-out", {
     variants: {
         size: {
             small: "text-xs py-1 px-2",
@@ -41,12 +47,12 @@ var buttonStyles = cva("rounded-md cursor-pointer py-2 px-4 text-white font-sm t
         },
     },
 });
-export default function Button(_a) {
+function Button(_a) {
     var size = _a.size, color = _a.color, text = _a.text, onClick = _a.onClick, props = __rest(_a, ["size", "color", "text", "onClick"]);
     var handleClick = function () {
         if (onClick) {
             onClick();
         }
     };
-    return (React.createElement("button", __assign({ className: buttonStyles({ size: size, color: color }), onClick: handleClick }, props), text));
+    return (react_1.default.createElement("button", __assign({ className: buttonStyles({ size: size, color: color }), onClick: handleClick }, props), text));
 }
