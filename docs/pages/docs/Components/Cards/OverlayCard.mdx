@@ -1,0 +1,87 @@
+---
+title: Overlay Card
+---
+
+import {OverlayCard} from "cui-react";
+
+# OverlayCard
+
+This component renders a card with an overlay, including a title, subtitle, and background image.
+
+## Import
+
+```tsx
+import {OverlayCard} from "cui-react";
+```
+
+## Example
+Render an overlay card:
+
+<div style={{ maxWidth: '300px', margin: '0 auto' }}>
+  <OverlayCard
+    title="Sample Overlay Card"
+    titleColor="text-white"
+    subtitle="This is a sample subtitle."
+    subtitleColor="text-gray-300"
+    imageUrl="https://via.placeholder.com/300"
+    size="medium"
+    color="default"
+  />
+</div>
+
+## Customizing
+You can customize the OverlayCard component using the following props:
+
+title (required): Title of the card.
+titleColor (optional): Color of the title text.
+subtitle (required): Subtitle or additional content of the card.
+subtitleColor (optional): Color of the subtitle text.
+imageUrl (required): URL of the image to display as the card's background.
+size (optional): Size variant of the card (small, medium, large). Defaults to medium.
+color (optional): Border color variant of the card (default, primary, secondary, danger). Defaults to default.
+
+
+## Example: Custom Size, Color, and Text Colors
+<div style={{ maxWidth: '300px', margin: '0 auto' }}>
+  <OverlayCard
+    title="Another Overlay Card"
+    titleColor="text-white"
+    subtitle="Another subtitle example."
+    subtitleColor="text-gray-400"
+    imageUrl="https://via.placeholder.com/300"
+    size="large"
+    color="primary"
+  />
+</div>
+
+This example renders a large overlay card with a primary border color, white title text, and gray subtitle text.
+
+Props
+title
+
+Type: string
+Description: Title of the card.
+titleColor
+
+Type: string
+Description: Color of the title text. Defaults to text-black.
+subtitle
+
+Type: string
+Description: Subtitle or additional content of the card.
+subtitleColor
+
+Type: string
+Description: Color of the subtitle text. Defaults to text-black.
+imageUrl
+
+Type: string
+Description: URL of the image to display as the card's background.
+size
+
+Type: "small" | "medium" | "large"
+Description: Size variant of the card.
+color
+
+Type: "default" | "primary" | "secondary" | "danger"
+Description: Border color variant of the card.

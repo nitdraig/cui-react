@@ -1,0 +1,21 @@
+{
+  "index": {
+    "type": "page",
+    "title": "C-UI",
+    "display": "hidden",
+    "theme": {
+      "layout": "raw"
+    }
+  },
+  "docs": {
+    "type": "page",
+    "title": "Docs"
+  },
+
+  "contact": {
+    "title": "Contact ↗",
+    "type": "page",
+    "href": "https://agustin.top/#contact",
+    "newWindow": true
+  }
+}

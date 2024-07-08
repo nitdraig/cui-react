@@ -1,0 +1,30 @@
+---
+title: C-IU | Components UI Using Tailwind
+---
+
+import Link from 'next/link'
+
+
+<section className="flex flex-col md:flex-row items-center justify-center h-screen bg-gray-50 dark:bg-[#171717]">
+  <div className="md:w-1/2 text-center md:text-left px-8 md:px-16">
+  <img src="logo.png" className="h-32 shadow-lg p-2" alt="CUI-Logo"/>
+    <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">  Start developing easily, quickly and for free.</h1>
+
+    <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">Collection of React components designed with Tailwind CSS. Find detailed guides, practical examples and best practices to integrate these components into your projects quickly and efficiently.</p>
+  <a href="/docs" className="bg-[#FFFFFF] text-[#000] border-2 border-[#000000] hover:bg-[#e0e0e0] text-sm inline-block  rounded-md cursor-pointer py-2 px-4  font-sm transition duration-300 ease-in-out">
+        Get started 
+      </a> 
+  </div>
+  <div className="md:w-1/2 md:px-8">
+    <div className="aspect-w-16 aspect-h-9">
+      <video className="mt-6 rounded-xl border dark:border-zinc-800"
+       muted
+      autoPlay
+      playsInline
+      loop>
+        <source src="/intro.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</section>

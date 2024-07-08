@@ -1,0 +1,58 @@
+---
+title: CircularProgress
+---
+
+import {CircularProgress} from  "cui-react";
+
+# CircularProgress
+
+This component renders a circular progress indicator.
+
+## Import
+
+```tsx
+import {CircularProgress} from "cui-react";
+
+```
+
+## Example
+Render a circular progress indicator:
+<div className="flex items-center rounded-md bg-slate-400 h-32 p-4 space-x-4 ">
+<CircularProgress value={75} size={100} strokeWidth={10} color="text-blue-500 dark:text-blue-600" />
+
+<CircularProgress value={64} size={100} strokeWidth={8} color="text-red-500 dark:text-red-600" />
+</div>
+
+
+## Customizing
+You can customize the CircularProgress using the following props:
+
+- size (optional): Diameter of the circular progress indicator. Defaults to 80.
+- strokeWidth (optional): Thickness of the stroke. Defaults to 6.
+- value (required): Progress value from 0 to 100.
+- color (optional): Color of the progress indicator. Defaults to "text-blue-500 dark:text-blue-400".
+- className (optional): Additional CSS classes to apply.
+
+## This example renders a circular progress indicator with a size of 120, stroke width of 10, and green color variant.
+
+Props
+size
+
+Type: number
+Description: Diameter of the circular progress indicator.
+strokeWidth
+
+Type: number
+Description: Thickness of the stroke.
+value
+
+Type: number
+Description: Progress value from 0 to 100.
+color
+
+Type: string
+Description: Color of the progress indicator.
+className
+
+Type: string
+Description: Additional CSS classes to apply.

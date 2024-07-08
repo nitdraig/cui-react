@@ -1,0 +1,64 @@
+---
+title:  Buttons
+---
+import { Buttons } from "cui-react";
+
+# Buttons
+This is a simple buttons styles
+
+## Import
+
+```tsx
+import { Buttons } from "cui-react";
+```
+
+## Usage
+Basic Example
+Render a basic button:
+
+```tsx
+<Button text="Click me" onClick={() => alert('Button clicked!')} />
+```
+
+
+
+## Customizing
+### You can customize the button using the following props:
+
+- text (required): The text displayed on the button.
+- onClick (optional): Function triggered when the button is clicked.
+- size (optional): Size of the button (small, medium, large, full). Defaults to medium.
+- color (optional): Color variant of the button (primary, secondary, danger, plate). Defaults to primary.
+```tsx
+<Button text="Send" color="secondary" size="small" />
+```
+
+In this example, the button will have a secondary color variant and a small size.
+
+## Props
+- text
+Type: string
+Description: The text displayed on the button.
+- onClick
+Type: () => void
+Description: Function triggered when the button is clicked.
+- size
+Type: "small" | "medium" | "large" | "full"
+Description: Size of the button.
+- color
+Type: "primary" | "secondary" | "danger" | "plate"
+Description: Color variant of the button.
+```tsx
+<Button text="Learn more" size="large" color="primary" onClick={() => navigate('/docs')} />
+```
+
+This button is large, with a primary color variant, and navigates to the /docs page when clicked.
+
+
+## Examples
+<div  className="flex items-center rounded-md bg-slate-400 h-32 p-2 ">
+ <Buttons text="Primary Full"  size="full" color="primary" onClick={() => alert('Primary')} />
+  <Buttons text="Secondary Large"  size="large" color="secondary" onClick={() => alert('Secondary')} />
+   <Buttons text="Danger Medium"  size="medium" color="danger" onClick={() => alert('Darger')} />
+  <Buttons text="Plate Small"  size="small" color="plate" onClick={() => alert('Plate')} />
+</div>

@@ -1,0 +1,76 @@
+---
+title: Card
+---
+
+import {Card} from "cui-react";
+
+# Card
+
+This component renders a card with a title, description, and image.
+
+## Import
+
+```tsx
+import {Card} from "cui-react";
+```
+
+## Example
+Render a card:
+
+<div style={{ maxWidth: '300px', margin: '0 auto' }}>
+  <Card
+    title="Sample Card"
+    description="This is a sample card component."
+    imageUrl="https://via.placeholder.com/300"
+    size="medium"
+    color="default"
+  />
+</div>
+
+
+## Customizing
+You can customize the Card component using the following props:
+
+title (required): Title of the card.
+description (required): Description or content of the card.
+imageUrl (required): URL of the image to display on the card.
+size (optional): Size variant of the card (small, medium, large). Defaults to medium.
+color (optional): Border color variant of the card (default, primary, secondary, danger). Defaults to default.
+
+
+## Example: Custom Size and Color
+
+<div style={{ maxWidth: '300px', margin: '0 auto' }}>
+  <Card
+    title="Another Card"
+    description="This is another sample card component."
+    imageUrl="https://via.placeholder.com/300"
+    size="large"
+    color="primary"
+  />
+</div>
+
+
+## This example renders a large card with a primary border color.
+
+Props
+title
+
+Type: string
+Description: Title of the card.
+description
+
+Type: string
+Description: Description or content of the card.
+imageUrl
+
+Type: string
+Description: URL of the image to display on the card.
+size
+
+Type: "small" | "medium" | "large"
+Description: Size variant of the card.
+color
+
+Type: "default" | "primary" | "secondary" | "danger"
+Description: Border color variant of the card.

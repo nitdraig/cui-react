@@ -1,0 +1,60 @@
+---
+title: Inputs
+---
+
+import {Input} from "cui-react";
+
+# Inputs
+
+This component renders an input field with a customizable label.
+
+## Import
+
+```tsx
+import {Inputs}  from "cui-react";
+```
+
+## Example
+Render an input field:
+<div className="flex items-center rounded-md bg-slate-100 h-32 p-4 space-x-4 ">
+ <Input id="username" name="username" labelText="Username" type="text" /></div>
+
+
+ ## Customizing
+You can customize the Inputs component using the following props:
+
+- id (required): ID for the input field.
+- name (optional): Name attribute for the input field.
+- labelText (optional): Label text for the input field.
+- type (optional): Type of input field (e.g., "text", "email", "password").
+- pattern (optional): Pattern attribute for input validation.
+
+## Example: Password Input
+
+<div className="flex items-center rounded-md bg-slate-100 h-32 p-4 space-x-4 ">
+  <Input id="password" name="password" labelText="Password" type="password" /></div>
+
+
+  This example renders a password input field with a label.
+
+Props
+id
+
+Type: string
+Description: ID for the input field.
+name
+
+Type: string
+Description: Name attribute for the input field.
+labelText
+
+Type: string
+Description: Label text for the input field.
+type
+
+Type: string
+Description: Type of input field (e.g., "text", "email", "password").
+pattern
+
+Type: string
+Description: Pattern attribute for input validation.

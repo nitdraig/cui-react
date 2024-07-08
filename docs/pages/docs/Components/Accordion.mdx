@@ -1,0 +1,68 @@
+---
+title: Accordion
+---
+
+import {Accordion} from  "cui-react";
+
+# Accordion
+
+This component renders an accordion with collapsible sections.
+
+## Import
+
+```tsx
+import {Accordion} from  "cui-react"
+```
+
+## Example
+Render an accordion:
+
+<div style={{ maxWidth: '400px', margin: '0 auto' }}>
+  <Accordion
+    items={[
+      { title: 'Section 1', content: 'Content for section 1.' },
+      { title: 'Section 2', content: 'Content for section 2.' },
+      { title: 'Section 3', content: 'Content for section 3.' },
+    ]}
+    color="primary"
+    textColor="white"
+  />
+</div>
+
+
+## Customizing
+You can customize the Accordion component using the following props:
+
+items (required): Array of objects representing accordion items with title and content.
+color (optional): Background color variant of the accordion (default, primary, secondary, danger, white). Defaults to default.
+textColor (optional): Text color variant of the accordion (default, primary, secondary, danger, white). Defaults to default.
+
+## Example: Custom Styles
+
+<div style={{ maxWidth: '400px', margin: '0 auto' }}>
+  <Accordion
+    items={[
+      { title: 'Section A', content: 'Content for section A.' },
+      { title: 'Section B', content: 'Content for section B.' },
+    ]}
+    color="secondary"
+    textColor="primary"
+  />
+</div>
+
+
+ This example renders an accordion with a secondary background color and primary text color.
+
+Props
+items
+
+Type: AccordionItem[]
+Description: Array of objects representing accordion items with title and content.
+color
+
+Type: "default" | "primary" | "secondary" | "danger" | "white"
+Description: Background color variant of the accordion.
+textColor
+
+Type: "default" | "primary" | "secondary" | "danger" | "white"
+Description: Text color variant of the accordion.
