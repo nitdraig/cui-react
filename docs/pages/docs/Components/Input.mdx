@@ -18,6 +18,17 @@ import {Input} from "cui-react";
 
 Render a basic input field:
 
+Visual:
+<div className="relative z-0 mb-6 w-full  group">
+<Input
+  labelText="Email Address"
+  id="email"
+  name="email"
+  type="email"
+  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+/></div>
+Code:
+
 ```tsx
 <Input
   labelText="Email Address"
@@ -41,7 +52,20 @@ You can customize the `Input` component using the following props:
 - `textColor` (optional): Text color variant of the input field (`primary`, `secondary`, `success`, `warning`, `dark`, `light`). Defaults to `primary`.
 
 ### Example: Custom Color and Text Color
+Visual:
+<div className="relative z-0 mb-6 w-full  group">
+<Input
+  labelText="Username"
+  id="username"
+  name="username"
+  type="text"
+  color="secondary"
+  textColor="dark"
+/>
+</div>
 
+
+Code:
 ```tsx
 <Input
   labelText="Username"

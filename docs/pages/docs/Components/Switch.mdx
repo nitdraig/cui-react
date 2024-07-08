@@ -18,9 +18,13 @@ import {Switch}from "cui-react";
 
 Render a basic switch:
 
+Code:
 ```tsx
 <Switch label="Enable Notifications" onChange={(checked) => console.log(checked)} />
 ```
+
+Visual:
+<div className=" flex space-x-4 p-10"><Switch label="Enable Notifications" onChange={(checked) => console.log(checked)} /></div>
 
 ### Customizing
 
@@ -34,7 +38,7 @@ You can customize the `Switch` component using the following props:
 
 ### Example: Custom Colors
 
-```tsx
+<div className=" flex space-x-4 p-10">
 <Switch
   label="Enable Dark Mode"
   initialChecked={true}
@@ -42,7 +46,7 @@ You can customize the `Switch` component using the following props:
   activeColor="black"
   inactiveColor="gray"
 />
-```
+</div>
 
 This example renders a switch for toggling dark mode with custom active and inactive colors.
 

@@ -1,6 +1,6 @@
 {
   "name": "cui-react",
-  "version": "0.0.10",
+  "version": "0.0.12",
   "description": "A simple component library for React/NextJS, using TailwindCSS",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -21,7 +21,7 @@
     "component",
     "library"
   ],
-  "homepage": "https://cui.agustin.top",
+  "homepage": "https://c-ui.agustin.top",
   "license": "MIT",
   "repository": {
     "type": "git",

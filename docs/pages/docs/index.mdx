@@ -5,8 +5,88 @@ title: Introduction
 
 CUI is a tailwind components Library Open source
 
+## Introduction
+C-UI is a component library built with Tailwind CSS and TypeScript for React and Next.js applications. It focuses on consistency, reusability, clarity, simplicity and adaptability to provide an excellent user and developer experience.
+
+## Principles of design
+1. **Consistency**: Maintain a consistent appearance and behavior across all components.
+2. **Reuse**: Design components in a modular way to facilitate their reuse in different parts.
+3. **Clarity and Simplicity**: Prioritize simplicity and clarity in design to improve understanding and usability.
+4. **Adaptability**: Design components that can adapt to different devices and screen sizes.
+5. **Accessibility**: Ensure all components are accessible per WCAG guidelines.
+
+## Facility
+### Previous requirements
+- Node.js (>=12.x)
+- npm or yarn
+- React (>=17.x)
+- Next.js (>=10.x)
+
+
 ## Installation
 
-## Configuration
+First, install the package using npm:
+
+```bash
+npm install cui-react
+```
+Second, add this to tailwind.config.ts
+```bash
+  content: [
+    "./node_modules/cui-react/dist/**/*.{js,ts,jsx,tsx}",
+          ], 
+```
+Third, import in your React/Next project
+```bash
+import { Button } from "cui-react";
+```
+Fourth, Enjoy C-UI
 
 ## Github
+```bash
+https://github.com/nitdraig/cui-react 
+```
+## Contribution
+Contributions are welcome! Please follow the steps below to contribute to the project.
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/nitdraig/cui-react.git
+
+cd cui-react
+```
+### Installation of Dependencies
+
+```bash
+npm install
+```
+### Project Structure
+cui-react/
+    ├──docs/ 
+    ├──npm/
+        ├─ dist/ 
+        ├── src/
+        │   |
+        |   ├── ui/
+        |   |    ├── components/
+        |   |    |
+        │   │    ├── Button/
+        │   │    │   ├── Button.tsx
+        │   │    │   ├── index.ts
+        │   │    │   
+        │   │    └── Input/
+        │   │        ├── Input.tsx
+        │   │        ├── index.ts
+        │   │       
+        │   └── index.ts
+        ├── README.md
+        ├── postcss.config.js
+        ├── tailwind.config.js
+        ├── package.json
+        └── tsconfig.json
+
+
+## License
+
+This project is licensed under the MIT License.

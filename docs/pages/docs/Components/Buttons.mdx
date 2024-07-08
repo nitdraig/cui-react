@@ -1,7 +1,7 @@
 ---
 title:  Buttons
 ---
-import { Buttons } from "cui-react";
+import { Button } from "cui-react";
 
 # Buttons
 This is a simple buttons styles
@@ -9,15 +9,18 @@ This is a simple buttons styles
 ## Import
 
 ```tsx
-import { Buttons } from "cui-react";
+import { Button } from "cui-react";
 ```
 
 ## Usage
-Basic Example
-Render a basic button:
+### Basic Example
+`Render a basic button:`
 
+Visual: 
+<Button text="Click me" color="primary"  onClick={() => alert('Button clicked!')} />
+Code:
 ```tsx
-<Button text="Click me" onClick={() => alert('Button clicked!')} />
+<Button text="Click me" color="primary" onClick={() => alert('Button clicked!')} />
 ```
 
 
@@ -36,29 +39,38 @@ Render a basic button:
 In this example, the button will have a secondary color variant and a small size.
 
 ## Props
-- text
-Type: string
-Description: The text displayed on the button.
-- onClick
-Type: () => void
-Description: Function triggered when the button is clicked.
-- size
-Type: "small" | "medium" | "large" | "full"
-Description: Size of the button.
-- color
-Type: "primary" | "secondary" | "danger" | "plate"
-Description: Color variant of the button.
+- **`text`**
+  - Type: string
+  - Description: The text displayed on the button.
+- **`onClick`**
+  - Type: () => void
+  - Description: Function triggered when the button is clicked.
+- **`size`**
+  - Type: "small" | "medium" | "large" | "full"
+  - Description: Size of the button.
+- **`color`**
+  - Type: "primary" | "secondary" | "danger" | "plate"
+  - Description: Color variant of the button.
+
 ```tsx
 <Button text="Learn more" size="large" color="primary" onClick={() => navigate('/docs')} />
 ```
 
 This button is large, with a primary color variant, and navigates to the /docs page when clicked.
 
-
 ## Examples
-<div  className="flex items-center rounded-md bg-slate-400 h-32 p-2 ">
- <Buttons text="Primary Full"  size="full" color="primary" onClick={() => alert('Primary')} />
-  <Buttons text="Secondary Large"  size="large" color="secondary" onClick={() => alert('Secondary')} />
-   <Buttons text="Danger Medium"  size="medium" color="danger" onClick={() => alert('Darger')} />
-  <Buttons text="Plate Small"  size="small" color="plate" onClick={() => alert('Plate')} />
+Visual:
+<div className="flex flex-col md:flex-row md:flex-wrap items-center rounded-md bg-slate-400 space-y-2 md:space-x-5 md:space-y-0 h-auto p-2">
+  <Button text="Primary Full" size="full" color="primary" onClick={() => alert('Primary')} />
+  <Button text="Secondary Large" size="large" color="secondary" onClick={() => alert('Secondary')} />
+  <Button text="Danger Medium" size="medium" color="danger" onClick={() => alert('Danger')} />
+  <Button text="Plate Small" size="small" color="plate" onClick={() => alert('Plate')} />
 </div>
+Code:
+```tsx
+<div className="flex flex-col md:flex-row md:flex-wrap items-center rounded-md bg-slate-400 space-y-2 md:space-x-5 md:space-y-0 h-auto p-2">
+  <Button text="Primary Full" size="full" color="primary" onClick={() => alert('Primary')} />
+  <Button text="Secondary Large" size="large" color="secondary" onClick={() => alert('Secondary')} />
+  <Button text="Danger Medium" size="medium" color="danger" onClick={() => alert('Danger')} />
+  <Button text="Plate Small" size="small" color="plate" onClick={() => alert('Plate')} />
+</div>```

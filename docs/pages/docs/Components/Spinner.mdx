@@ -18,8 +18,16 @@ import {Spinner} from "cui-react";
 
 Render a basic spinner:
 
+Visual:
+<div className=" flex space-x-4 p-10">
+<Spinner size="large" /> <Spinner color="green" size="medium" /> <Spinner color="red" size="small" />
+</div>
+
+Code:
 ```tsx
-<Spinner />
+<div className=" flex space-x-4 p-10">
+<Spinner size="large" /> <Spinner color="green" size="medium" /> <Spinner color="red" size="small" />
+</div>
 ```
 
 ### Customizing
@@ -31,6 +39,9 @@ You can customize the `Spinner` component using the following props:
 
 ### Example: Custom Size and Color
 
+Visual:
+<Spinner size="large" color="green" />
+Code:
 ```tsx
 <Spinner size="large" color="green" />
 ```

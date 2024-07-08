@@ -18,29 +18,45 @@ import {Select }from "cui-react";
 
 ## Example
 Render a select dropdown:
-
+Visual: 
 <div style={{ maxWidth: '300px', margin: '0 auto' }}>
   <Select
     options={[
       { value: 'apple', label: 'Apple' },
       { value: 'banana', label: 'Banana' },
       { value: 'orange', label: 'Orange' },
-    ]}
+        ]}
+    
     className="mt-2"
   />
 </div>
-
+Code:
+```tsx
+<div style={{ maxWidth: '300px', margin: '0 auto' }}>
+  <Select
+    options={[
+      { value: 'apple', label: 'Apple' },
+      { value: 'banana', label: 'Banana' },
+      { value: 'orange', label: 'Orange' },
+        ]}
+    
+    className="mt-2"
+  />
+</div>
+```
 
 ## Customizing
 - You can customize the Select component using the following props:
 
-options (required): Array of objects with value and label properties.
-className (optional): Additional CSS classes to apply to the select container.
+  - options (required): Array of objects with value and label properties.
+  - className (optional): Additional CSS classes to apply to the select container.
 
 ## Example: Custom Styles
+Visual:
+
 <div style={{ maxWidth: '300px', margin: '0 auto' }}>
   <Select
-    options={[
+     options={[
       { value: 'red', label: 'Red' },
       { value: 'blue', label: 'Blue' },
       { value: 'green', label: 'Green' },
@@ -48,3 +64,17 @@ className (optional): Additional CSS classes to apply to the select container.
     className="mt-2 bg-gray-100 border-gray-400"
   />
 </div>
+
+Code:
+```tsx
+<div style={{ maxWidth: '300px', margin: '0 auto' }}>
+  <Select
+     options={[
+      { value: 'red', label: 'Red' },
+      { value: 'blue', label: 'Blue' },
+      { value: 'green', label: 'Green' },
+    ]}
+    className="mt-2 bg-gray-100 border-gray-400"
+  />
+</div>
+```

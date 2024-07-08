@@ -1,0 +1,18 @@
+import { Button } from "cui-react";
+import { useRouter } from 'next/router';
+
+export default function NotFound() {
+  const router = useRouter();
+
+  return (
+    <section className="flex flex-col items-center justify-center h-64 bg-gray-50 dark:bg-[#171717]">
+      <div className="text-center px-8 md:px-16">
+        <img src="logo.png" className="h-32 shadow-lg p-2 mb-4 mx-auto" alt="CUI-Logo"/>
+        <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Page not Found</h3>
+        <div className="p-2">
+          <Button text="Go Back" size="medium" color="primary" onClick={() => router.push('/docs')} />
+        </div>
+      </div>
+    </section>
+  );
+}

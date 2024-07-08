@@ -3,9 +3,11 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.OverlayCard = exports.HoverCard = exports.Card = void 0;
+exports.OverlayCard = exports.HoverCard = exports.TextCard = exports.Card = void 0;
 var Card_1 = require("./Card");
 Object.defineProperty(exports, "Card", { enumerable: true, get: function () { return __importDefault(Card_1).default; } });
+var TextCard_1 = require("./TextCard");
+Object.defineProperty(exports, "TextCard", { enumerable: true, get: function () { return __importDefault(TextCard_1).default; } });
 var HoverCard_1 = require("./HoverCard");
 Object.defineProperty(exports, "HoverCard", { enumerable: true, get: function () { return __importDefault(HoverCard_1).default; } });
 var OverlayCard_1 = require("./OverlayCard");

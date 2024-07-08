@@ -18,6 +18,9 @@ import {Skeleton} from "cui-react";
 
 Render a basic skeleton:
 
+Visual:
+<Skeleton width="w-48" height="h-6" />
+Code:
 ```tsx
 <Skeleton width="w-48" height="h-6" />
 ```
@@ -31,12 +34,16 @@ You can customize the `Skeleton` component using the following props:
 - `className` (optional): Additional CSS classes to apply to the skeleton.
 
 ### Example: Custom Size and Style
+Visual:
 
+<Skeleton width="w-64" height="h-8"  />
+
+Code:
 ```tsx
-<Skeleton width="w-64" height="h-8" className="bg-blue-200 dark:bg-blue-600" />
+<Skeleton width="w-64" height="h-8"  />
 ```
 
-This example renders a skeleton with a width of `w-64`, height of `h-8`, and a blue background.
+This example renders a skeleton with a width of `w-64`, height of `h-8`.
 
 ## Props
 
@@ -52,3 +59,44 @@ This example renders a skeleton with a width of `w-64`, height of `h-8`, and a b
   - Type: `string`
   - Description: Additional CSS classes to apply to the skeleton.
 
+## Use Examples:
+Visual:
+<div className="max-w-lg p-10 mx-auto">
+        <h3 className="text-lg py-4">Skeleton example</h3>
+        <div className="flex items-center mb-4">
+          <Skeleton width="w-16" height="h-16" className="mr-4" />
+          <div>
+            <Skeleton width="w-32" height="h-4" className="mb-2" />
+            <Skeleton width="w-24" height="h-4" />
+          </div>
+        </div>
+        <div className="mb-4">
+          <Skeleton height="h-8" />
+        </div>
+        <div className="grid grid-cols-3 gap-4">
+          <Skeleton height="h-8" />
+          <Skeleton height="h-8" />
+          <Skeleton height="h-8" />
+        </div> </div>
+
+Code:
+```tsx
+<div className="max-w-lg p-10 mx-auto">
+  <h3 className="text-lg py-4">Skeleton example</h3>
+    <div className="flex items-center mb-4">
+          <Skeleton width="w-16" height="h-16" className="mr-4" />
+          <div>
+            <Skeleton width="w-32" height="h-4" className="mb-2" />
+            <Skeleton width="w-24" height="h-4" />
+          </div>
+    </div>
+          <div className="mb-4">
+            <Skeleton height="h-8" />
+          </div>
+        <div className="grid grid-cols-3 gap-4">
+          <Skeleton height="h-8" />
+          <Skeleton height="h-8" />
+          <Skeleton height="h-8" />
+        </div>
+</div>
+```
