@@ -64,11 +64,9 @@ const HoverCard: React.FC<HoverCardProps> = ({
           } transition-filter duration-500`}
           style={{ backgroundImage: `url(${imageUrl})` }}
         />
-        <div className="absolute inset-0 p-4 flex flex-col justify-end opacity-0 hover:opacity-100 transition-opacity duration-500">
-          <h3 className={`text-lg font-semibold mb-1 ${titleColor}`}>
-            {title}
-          </h3>
-          <p className={`text-sm ${subtitleColor}`}>{subtitle}</p>
+        <div className="absolute inset-0 p-4 flex flex-col justify-end opacity-0 hover:opacity-100 bg-black bg-opacity-20 transition-opacity duration-500">
+          <h3 className={`text-2xl font-bold mb-1 ${titleColor}`}>{title}</h3>
+          <p className={`text-lg ${subtitleColor}`}>{subtitle}</p>
         </div>
       </div>
     </div>
