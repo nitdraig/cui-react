@@ -11,12 +11,22 @@
     "type": "git",
     "url": "git+https://github.com/nitdraig/cui-react/"
   },
-  "author": "",
+  "author": {
+    "name": "Agustin Avellaneda",
+    "email": "agustind@duck.com"
+  },
+  "keywords": [
+    "react",
+    "tailwindcss",
+    "cui",
+    "component",
+    "library"
+  ],
+  "homepage": "https://cui.agustin.top",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/nitdraig/cui-react/issues"
   },
-  "homepage": "https://cui.agustin.top",
   "dependencies": {
     "cui-react": "^0.0.9",
     "framer-motion": "^11.2.13",

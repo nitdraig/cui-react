@@ -4,7 +4,7 @@
   </a>
 </p>
 
-<h3 align="center">C-UI | Component UI Library for React</h3>
+<h3 align="center">C-UI React | Docs & NPM Package | Component UI Library for React</h3>
 
 <p align="center">
   Build Beautiful Interfaces with Ease
