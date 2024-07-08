@@ -1,6 +1,7 @@
 import React from "react";
+import { cva, VariantProps } from "class-variance-authority";
 
-interface InputProps {
+interface InputProps extends VariantProps<typeof inputStyles> {
   name?: string;
   id?: string;
   labelText?: string;
@@ -8,12 +9,32 @@ interface InputProps {
   pattern?: string;
 }
 
+const inputStyles = cva(
+  "block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2",
+  {
+    variants: {
+      color: {
+        primary: "border-blue-500",
+        secondary: "border-red-500",
+        success: "border-green-500",
+        warning: "border-yellow-500",
+        dark: "border-black-500",
+        light: "border-white-500",
+      },
+    },
+    defaultVariants: {
+      color: "primary",
+    },
+  }
+);
+
 const Input: React.FC<InputProps> = ({
   id,
   name,
   labelText,
   type,
   pattern,
+  color,
 }) => {
   return (
     <div className="relative z-0 mb-6 w-full group">
@@ -21,7 +42,9 @@ const Input: React.FC<InputProps> = ({
         type={type}
         name={name}
         id={id}
-        className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+        className={`${inputStyles({
+          color,
+        })} appearance-none dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer`}
         placeholder=" "
         required
         pattern={pattern}
