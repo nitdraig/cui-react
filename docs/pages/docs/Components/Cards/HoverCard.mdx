@@ -1,0 +1,114 @@
+---
+title: HoverCard
+---
+
+import {HoverCard} from "cui-react";
+
+# HoverCard
+
+This component displays a card that reveals additional content when hovered over.
+
+## Import
+
+```tsx
+import {HoverCard} from "cui-react";
+```
+
+## Example
+
+Render a basic hover card:
+
+<div style={{ maxWidth: '300px', margin: '0 auto' }}>
+  <HoverCard
+    title="Sample Hover Card"
+    subtitle="Hover over me!"
+    imageUrl="https://via.placeholder.com/400"
+    size="medium"
+    color="default"
+    titleColor="text-white"
+    subtitleColor="text-gray-300"
+  />
+</div>
+
+```tsx
+<HoverCard
+  title="Sample Hover Card"
+  subtitle="Hover over me!"
+  imageUrl="https://via.placeholder.com/400"
+  size="medium"
+  color="default"
+  titleColor="text-white"
+  subtitleColor="text-gray-300"
+/>
+```
+
+### Customizing
+
+You can customize the `HoverCard` component using the following props:
+
+- `title` (required): Title of the card.
+- `titleColor` (optional): Color of the title text.
+- `subtitle` (required): Subtitle or additional content of the card.
+- `subtitleColor` (optional): Color of the subtitle text.
+- `imageUrl` (required): URL of the background image for the card.
+- `size` (optional): Size variant of the card (`small`, `medium`, `large`). Defaults to `medium`.
+- `color` (optional): Color variant of the card (`default`, `primary`, `secondary`, `danger`). Defaults to `default`.
+
+### Example: Custom Size, Background, and Colors
+
+<div style={{ maxWidth: '300px', margin: '0 auto' }}>
+  <HoverCard
+    title="Another Hover Card"
+    subtitle="Hover over me for more!"
+    imageUrl="https://via.placeholder.com/400"
+    size="large"
+    color="primary"
+    titleColor="text-black"
+    subtitleColor="text-gray-600"
+  />
+</div>
+
+```tsx
+<HoverCard
+  title="Another Hover Card"
+  subtitle="Hover over me for more!"
+  imageUrl="https://via.placeholder.com/400"
+  size="large"
+  color="primary"
+  titleColor="text-black"
+  subtitleColor="text-gray-600"
+/>
+```
+
+This example renders a large hover card with a primary color variant, a custom title color, and subtitle color.
+
+## Props
+
+- **`title`**
+  - Type: `string`
+  - Description: Title of the card.
+
+- **`titleColor`**
+  - Type: `string`
+  - Description: Color of the title text.
+
+- **`subtitle`**
+  - Type: `string`
+  - Description: Subtitle or additional content of the card.
+
+- **`subtitleColor`**
+  - Type: `string`
+  - Description: Color of the subtitle text.
+
+- **`imageUrl`**
+  - Type: `string`
+  - Description: URL of the background image for the card.
+
+- **`size`**
+  - Type: `"small" | "medium" | "large"`
+  - Description: Size variant of the card. Defaults to `medium`.
+
+- **`color`**
+  - Type: `"default" | "primary" | "secondary" | "danger"`
+  - Description: Color variant of the card. Defaults to `default`.
+

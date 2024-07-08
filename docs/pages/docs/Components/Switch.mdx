@@ -1,0 +1,73 @@
+---
+title: Switch
+---
+
+import {Switch} from "cui-react";
+
+# Switch
+
+This component renders a toggle switch.
+
+## Import
+
+```tsx
+import {Switch}from "cui-react";
+```
+
+## Example
+
+Render a basic switch:
+
+```tsx
+<Switch label="Enable Notifications" onChange={(checked) => console.log(checked)} />
+```
+
+### Customizing
+
+You can customize the `Switch` component using the following props:
+
+- `label` (required): Label displayed next to the switch.
+- `initialChecked` (optional): Initial checked state of the switch. Defaults to `false`.
+- `onChange` (required): Function called when the switch state changes.
+- `activeColor` (optional): Color when the switch is active (`white`, `black`, `primary`, `secondary`). Defaults to `primary`.
+- `inactiveColor` (optional): Color when the switch is inactive (`white`, `black`, `primary`, `secondary`). Defaults to `secondary`.
+
+### Example: Custom Colors
+
+```tsx
+<Switch
+  label="Enable Dark Mode"
+  initialChecked={true}
+  onChange={(checked) => console.log("Dark mode is", checked ? "enabled" : "disabled")}
+  activeColor="black"
+  inactiveColor="gray"
+/>
+```
+
+This example renders a switch for toggling dark mode with custom active and inactive colors.
+
+## Props
+
+- **`label`**
+  - Type: `string`
+  - Description: Label displayed next to the switch.
+
+- **`initialChecked`**
+  - Type: `boolean`
+  - Default: `false`
+  - Description: Initial checked state of the switch.
+
+- **`onChange`**
+  - Type: `(checked: boolean) => void`
+  - Description: Function called when the switch state changes.
+
+- **`activeColor`**
+  - Type: `"white" | "black" | "primary" | "secondary"`
+  - Default: `"primary"`
+  - Description: Color when the switch is active.
+
+- **`inactiveColor`**
+  - Type: `"white" | "black" | "primary" | "secondary"`
+  - Default: `"secondary"`
+  - Description: Color when the switch is inactive.
+

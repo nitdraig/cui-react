@@ -1,0 +1,48 @@
+---
+title: Spinner
+---
+
+import {Spinner} from "cui-react";
+
+# Spinner
+
+This component renders a spinning loading spinner.
+
+## Import
+
+```tsx
+import {Spinner} from "cui-react";
+```
+
+## Example
+
+Render a basic spinner:
+
+```tsx
+<Spinner />
+```
+
+### Customizing
+
+You can customize the `Spinner` component using the following props:
+
+- `size` (optional): Size of the spinner (`small`, `medium`, `large`). Defaults to `medium`.
+- `color` (optional): Color variant of the spinner (`blue`, `red`, `green`, `yellow`, `black`, `white`). Defaults to `blue`.
+
+### Example: Custom Size and Color
+
+```tsx
+<Spinner size="large" color="green" />
+```
+
+This example renders a large spinner with a green color.
+
+## Props
+
+- **`size`**
+  - Type: `"small" | "medium" | "large"`
+  - Description: Size of the spinner. Defaults to `medium`.
+
+- **`color`**
+  - Type: `"blue" | "red" | "green" | "yellow" | "black" | "white"`
+  - Description: Color variant of the spinner. Defaults to `blue`.

@@ -1,0 +1,54 @@
+---
+title: Skeleton
+---
+
+import {Skeleton} from "cui-react";
+
+# Skeleton
+
+This component renders a placeholder skeleton for loading content.
+
+## Import
+
+```tsx
+import {Skeleton} from "cui-react";
+```
+
+## Example
+
+Render a basic skeleton:
+
+```tsx
+<Skeleton width="w-48" height="h-6" />
+```
+
+### Customizing
+
+You can customize the `Skeleton` component using the following props:
+
+- `width` (optional): Width of the skeleton (e.g., `w-48`, `w-full`). Defaults to `full`.
+- `height` (optional): Height of the skeleton (e.g., `h-4`, `h-8`). Defaults to `h-4`.
+- `className` (optional): Additional CSS classes to apply to the skeleton.
+
+### Example: Custom Size and Style
+
+```tsx
+<Skeleton width="w-64" height="h-8" className="bg-blue-200 dark:bg-blue-600" />
+```
+
+This example renders a skeleton with a width of `w-64`, height of `h-8`, and a blue background.
+
+## Props
+
+- **`width`**
+  - Type: `string`
+  - Description: Width of the skeleton. Defaults to `full`.
+
+- **`height`**
+  - Type: `string`
+  - Description: Height of the skeleton. Defaults to `h-4`.
+
+- **`className`**
+  - Type: `string`
+  - Description: Additional CSS classes to apply to the skeleton.
+

@@ -1,60 +1,87 @@
 ---
-title: Inputs
+title: Input
 ---
 
 import {Input} from "cui-react";
 
-# Inputs
+# Input
 
-This component renders an input field with a customizable label.
+This component renders an input field with customizable styles.
 
 ## Import
 
 ```tsx
-import {Inputs}  from "cui-react";
+import {Input} from "cui-react";
 ```
 
 ## Example
-Render an input field:
-<div className="flex items-center rounded-md bg-slate-100 h-32 p-4 space-x-4 ">
- <Input id="username" name="username" labelText="Username" type="text" /></div>
 
+Render a basic input field:
 
- ## Customizing
-You can customize the Inputs component using the following props:
+```tsx
+<Input
+  labelText="Email Address"
+  id="email"
+  name="email"
+  type="email"
+  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+/>
+```
 
-- id (required): ID for the input field.
-- name (optional): Name attribute for the input field.
-- labelText (optional): Label text for the input field.
-- type (optional): Type of input field (e.g., "text", "email", "password").
-- pattern (optional): Pattern attribute for input validation.
+### Customizing
 
-## Example: Password Input
+You can customize the `Input` component using the following props:
 
-<div className="flex items-center rounded-md bg-slate-100 h-32 p-4 space-x-4 ">
-  <Input id="password" name="password" labelText="Password" type="password" /></div>
+- `labelText` (required): Label text for the input field.
+- `id` (optional): ID attribute for the input field.
+- `name` (optional): Name attribute for the input field.
+- `type` (optional): Type of input field (`text`, `email`, `password`, etc.).
+- `pattern` (optional): Pattern attribute for input validation.
+- `color` (optional): Color variant of the input field (`primary`, `secondary`, `success`, `warning`, `dark`, `light`). Defaults to `primary`.
+- `textColor` (optional): Text color variant of the input field (`primary`, `secondary`, `success`, `warning`, `dark`, `light`). Defaults to `primary`.
 
+### Example: Custom Color and Text Color
 
-  This example renders a password input field with a label.
+```tsx
+<Input
+  labelText="Username"
+  id="username"
+  name="username"
+  type="text"
+  color="secondary"
+  textColor="dark"
+/>
+```
 
-Props
-id
+This example renders an input field with a secondary color variant and dark text color.
 
-Type: string
-Description: ID for the input field.
-name
+## Props
 
-Type: string
-Description: Name attribute for the input field.
-labelText
+- **`labelText`**
+  - Type: `string`
+  - Description: Label text for the input field.
 
-Type: string
-Description: Label text for the input field.
-type
+- **`id`**
+  - Type: `string`
+  - Description: ID attribute for the input field.
 
-Type: string
-Description: Type of input field (e.g., "text", "email", "password").
-pattern
+- **`name`**
+  - Type: `string`
+  - Description: Name attribute for the input field.
 
-Type: string
-Description: Pattern attribute for input validation.
+- **`type`**
+  - Type: `string`
+  - Description: Type of input field (`text`, `email`, `password`, etc.).
+
+- **`pattern`**
+  - Type: `string`
+  - Description: Pattern attribute for input validation.
+
+- **`color`**
+  - Type: `"primary" | "secondary" | "success" | "warning" | "dark" | "light"`
+  - Description: Color variant of the input field. Defaults to `primary`.
+
+- **`textColor`**
+  - Type: `"primary" | "secondary" | "success" | "warning" | "dark" | "light"`
+  - Description: Text color variant of the input field. Defaults to `primary`.
+

@@ -1,12 +1,12 @@
 ---
-title: Overlay Card
+title: OverlayCard
 ---
 
 import {OverlayCard} from "cui-react";
 
 # OverlayCard
 
-This component renders a card with an overlay, including a title, subtitle, and background image.
+This component renders an overlay card with a title, subtitle, and background image.
 
 ## Import
 
@@ -15,73 +15,96 @@ import {OverlayCard} from "cui-react";
 ```
 
 ## Example
-Render an overlay card:
+
+Render a basic overlay card:
 
 <div style={{ maxWidth: '300px', margin: '0 auto' }}>
   <OverlayCard
     title="Sample Overlay Card"
-    titleColor="text-white"
     subtitle="This is a sample subtitle."
-    subtitleColor="text-gray-300"
-    imageUrl="https://via.placeholder.com/300"
+    imageUrl="https://via.placeholder.com/400"
     size="medium"
-    color="default"
+    bg="gray"
   />
 </div>
 
-## Customizing
-You can customize the OverlayCard component using the following props:
+```tsx
+<OverlayCard
+  title="Sample Overlay Card"
+  subtitle="This is a sample subtitle."
+  imageUrl="https://via.placeholder.com/400"
+  size="medium"
+  bg="gray"
+/>
+```
 
-title (required): Title of the card.
-titleColor (optional): Color of the title text.
-subtitle (required): Subtitle or additional content of the card.
-subtitleColor (optional): Color of the subtitle text.
-imageUrl (required): URL of the image to display as the card's background.
-size (optional): Size variant of the card (small, medium, large). Defaults to medium.
-color (optional): Border color variant of the card (default, primary, secondary, danger). Defaults to default.
+### Customizing
 
+You can customize the `OverlayCard` component using the following props:
 
-## Example: Custom Size, Color, and Text Colors
+- `title` (required): Title of the card.
+- `titleColor` (optional): Color of the title text (`gray`, `black`, `blue`, `red`). Defaults to `black`.
+- `subtitle` (required): Subtitle or additional content of the card.
+- `subtitleColor` (optional): Color of the subtitle text (`gray`, `black`, `blue`, `red`). Defaults to `black`.
+- `imageUrl` (required): URL of the background image for the card.
+- `size` (optional): Size variant of the card (`small`, `medium`, `large`). Defaults to `medium`.
+- `bg` (optional): Background color variant of the card (`gray`, `white`, `black`, `blue`, `red`). Defaults to `gray`.
+
+### Example: Custom Size, Background, and Colors
+
 <div style={{ maxWidth: '300px', margin: '0 auto' }}>
   <OverlayCard
     title="Another Overlay Card"
-    titleColor="text-white"
     subtitle="Another subtitle example."
-    subtitleColor="text-gray-400"
-    imageUrl="https://via.placeholder.com/300"
+    imageUrl="https://via.placeholder.com/400"
     size="large"
-    color="primary"
+    bg="blue"
+    titleColor="blue"
+    subtitleColor="white"
   />
 </div>
 
-This example renders a large overlay card with a primary border color, white title text, and gray subtitle text.
+```tsx
+<OverlayCard
+  title="Another Overlay Card"
+  subtitle="Another subtitle example."
+  imageUrl="https://via.placeholder.com/400"
+  size="large"
+  bg="blue"
+  titleColor="blue"
+  subtitleColor="white"
+/>
+```
 
-Props
-title
+This example renders a large overlay card with a blue background, blue title text, and white subtitle text.
 
-Type: string
-Description: Title of the card.
-titleColor
+## Props
 
-Type: string
-Description: Color of the title text. Defaults to text-black.
-subtitle
+- **`title`**
+  - Type: `string`
+  - Description: Title of the card.
 
-Type: string
-Description: Subtitle or additional content of the card.
-subtitleColor
+- **`titleColor`**
+  - Type: `"gray" | "black" | "blue" | "red"`
+  - Description: Color of the title text. Defaults to `black`.
 
-Type: string
-Description: Color of the subtitle text. Defaults to text-black.
-imageUrl
+- **`subtitle`**
+  - Type: `string`
+  - Description: Subtitle or additional content of the card.
 
-Type: string
-Description: URL of the image to display as the card's background.
-size
+- **`subtitleColor`**
+  - Type: `"gray" | "black" | "blue" | "red"`
+  - Description: Color of the subtitle text. Defaults to `black`.
 
-Type: "small" | "medium" | "large"
-Description: Size variant of the card.
-color
+- **`imageUrl`**
+  - Type: `string`
+  - Description: URL of the background image for the card.
 
-Type: "default" | "primary" | "secondary" | "danger"
-Description: Border color variant of the card.
+- **`size`**
+  - Type: `"small" | "medium" | "large"`
+  - Description: Size variant of the card. Defaults to `medium`.
+
+- **`bg`**
+  - Type: `"gray" | "white" | "black" | "blue" | "red"`
+  - Description: Background color variant of the card. Defaults to `gray`.
+
