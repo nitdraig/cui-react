@@ -58,7 +58,7 @@ Second, add this to tailwind.config.ts
 ```
 Third, import in your React/Next project
 ```bash
-import { Buttons } from "cui-react";
+import { Button } from "cui-react";
 ```
 Fourth, Enjoy C-UI
 
