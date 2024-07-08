@@ -22,7 +22,25 @@
 
 # C-UI
 
-`C-UI` is a component UI library for React, designed to simplify the creation of beautiful and responsive user interfaces.
+## Introduction
+C-UI is a component library built with Tailwind CSS and TypeScript for React and Next.js applications. It focuses on consistency, reusability, clarity, simplicity and adaptability to provide an excellent user and developer experience.
+
+## Principles of design
+1.
+**Consistency**: Maintain a consistent appearance and behavior across all components.
+2. **Reuse**: Design components in a modular way to facilitate their reuse in different parts.
+3. **Clarity and Simplicity**: Prioritize simplicity and clarity in design to improve understanding and usability.
+4.
+**Adaptability**: Design components that can adapt to different devices and screen sizes.
+5. **Accessibility**: Ensure all components are accessible per WCAG guidelines.
+
+## Facility
+### Previous requirements
+- Node.js (>=12.x)
+- npm or yarn
+- React (>=17.x)
+- Next.js (>=10.x)
+
 
 ## Installation
 
@@ -45,30 +63,5 @@ import { Buttons } from "cui-react";
 Fourth, Enjoy C-UI
 
 
-## Principles and Guidelines
-### Simplicity
-Prioritize simplicity in all aspects of design. Eliminate unnecessary elements to maintain an intuitive user experience.
-
-### Minimalism
-Adopt a minimalist approach in UI design. Use only essential elements to effectively communicate information and avoid visual clutter.
-
-### Modernity
-Keep your design system up-to-date with the latest trends and technologies in UI/UX design. This includes responsive design techniques, subtle animations, and user-centered design.
-
-### Flexibility and Modifiability
-Design your system to be easily modifiable and adaptable to different needs and contexts. Use variables, reusable components, and scalable design patterns to facilitate customization and system expansion.
-
-### Coherence
-Ensure all design elements follow a consistent set of rules and guidelines. This includes consistency in color palette, typography, spacing, and icon usage throughout the system.
-
-### Accessibility
-Design with accessibility in mind to ensure your system is usable by people with diverse abilities and needs. Follow web accessibility guidelines, such as ensuring adequate color contrast and providing textual alternatives for non-text elements.
-
-### Scalability
-Design your system with scalability in mind to grow and adapt as your product evolves. This involves considering system architecture, file organization, and clear documentation to facilitate maintenance and expansion.
-
-### Usability
-Prioritize usability in your system design. This means making interactions intuitive and easy to understand for users, minimizing the need for learning and reducing the possibility of errors.
-
-### Contributing
-Contributions are welcome. Please open an issue or a pull request for any improvements or fixes.
+## Contribution
+Contributions are welcome! Please follow the steps below to contribute to the project.

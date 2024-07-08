@@ -7,7 +7,7 @@ interface ButtonProps extends VariantProps<typeof buttonStyles> {
 }
 
 const buttonStyles = cva(
-  "rounded-md cursor-pointer py-2 px-4 text-white font-sm transition duration-300 ease-in-out",
+  "rounded-md cursor-pointer py-2 px-4 font-sm transition duration-300 ease-in-out",
   {
     variants: {
       size: {
@@ -18,7 +18,7 @@ const buttonStyles = cva(
       },
       color: {
         primary:
-          "bg-[#FFFFFF] text-[#000] border-2 border-[#000000] hover:bg-[#e0e0e0] ",
+          "bg-[#FFFFFF] text-[#000000] border-2 border-[#000000] hover:bg-[#e0e0e0] ",
         secondary:
           "bg-[#000000] border-2 border-[#000000] hover:bg-[#534f4f]  ",
         danger: "bg-[#ad0202] hover:bg-[#df0505] ",

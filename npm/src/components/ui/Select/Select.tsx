@@ -1,19 +1,40 @@
 import React from "react";
+import { cva, VariantProps } from "class-variance-authority";
 
 interface Option {
   value: string;
   label: string;
 }
 
-interface SelectProps {
+interface SelectProps extends VariantProps<typeof selectStyles> {
   options: Option[];
   className?: string;
 }
 
-const Select: React.FC<SelectProps> = ({ options, className }) => {
+const selectStyles = cva("relative", {
+  variants: {
+    color: {
+      primary: "border-[#000000] hover:border-[#e0e0e0] ",
+      secondary: "border-[#ffffff] hover:border-[#000000]  ",
+      danger: "bg-[#ad0202] hover:bg-[#df0505] ",
+      plate: "border-[#c7c3c3]    hover:border-[#2c2727]    ",
+
+      blue: "border-[#328dca]     hover:border-[#48b6ff]   ",
+    },
+    defaultVariants: {
+      color: "primary",
+    },
+  },
+});
+
+const Select: React.FC<SelectProps> = ({ options, className, color }) => {
   return (
-    <div className={`relative ${className}`}>
-      <select className="block appearance-none w-full bg-white border border-gray-300 hover:border-gray-400 px-4 py-2 pr-8 rounded-md shadow leading-tight focus:outline-none focus:shadow-outline">
+    <div className={`relative  ${className}`}>
+      <select
+        className={`block appearance-none w-full   border ${selectStyles({
+          color,
+        })} px-4 py-2 pr-8 rounded-md shadow  leading-tight focus:outline-none focus:shadow-outline`}
+      >
         <option value="">Select an option</option>
         {options.map((option) => (
           <option key={option.value} value={option.value}>
