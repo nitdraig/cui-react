@@ -1,0 +1,1 @@
+{"version":3,"file":"Skeleton.d.ts","sourceRoot":"","sources":["../../../../src/components/ui/Skeleton/Skeleton.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,MAAM,OAAO,CAAC;AAE1B,UAAU,aAAa;IACrB,KAAK,CAAC,EAAE,MAAM,CAAC;IACf,MAAM,CAAC,EAAE,MAAM,CAAC;IAChB,SAAS,CAAC,EAAE,MAAM,CAAC;CACpB;AAED,QAAA,MAAM,QAAQ,EAAE,KAAK,CAAC,EAAE,CAAC,aAAa,CAUrC,CAAC;AAEF,eAAe,QAAQ,CAAC"}
