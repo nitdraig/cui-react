@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://cui.agustin.top/">
+  <a href="https://c-ui.agustin.top/">
     <img src="https://res.cloudinary.com/draig/image/upload/v1720318582/cui/qri5p1r8fwfp8wvfc6l0.png" alt="CUI Logo" width="200" height="200">
   </a>
 </p>
@@ -10,7 +10,7 @@
 <p align="center">
   Build Beautiful Interfaces with Ease
   <br>
-<a href="https://cui.agustin.top/"><strong>Explore CUI docs »</strong></a>
+<a href="https://c-ui.agustin.top/"><strong>Explore CUI docs »</strong></a>
   <br>
   <br>
   <a href="https://github.com/nitdraig/cui-react/issues">Report bug</a>
