@@ -17,9 +17,9 @@ const selectStyles = cva("relative", {
       primary: "border-[#000000] hover:border-[#e0e0e0] ",
       secondary: "border-[#ffffff] hover:border-[#000000]  ",
       danger: "bg-[#ad0202] hover:bg-[#df0505] ",
-      plate: "border-[#c7c3c3]    hover:border-[#2c2727]    ",
+      plate: "border-[#c7c3c3]  hover:border-[#2c2727]    ",
 
-      blue: "border-[#328dca]     hover:border-[#48b6ff]   ",
+      blue: "border-[#328dca] hover:border-[#48b6ff]   ",
     },
     defaultVariants: {
       color: "primary",
@@ -44,7 +44,7 @@ const Select: React.FC<SelectProps> = ({ options, className, color }) => {
       </select>
       <div className="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
         <svg
-          className="w-4 h-4 text-gray-400"
+          className="w-4 h-4 dark:text-gray-500 text-gray-200"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
           fill="currentColor"

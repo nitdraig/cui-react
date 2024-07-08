@@ -12,7 +12,7 @@ interface AccordionProps extends VariantProps<typeof accordionStyles> {
   textColor?: "primary" | "secondary" | "danger" | "default" | "white";
 }
 
-const accordionStyles = cva("divide-y divide-gray-200", {
+const accordionStyles = cva("", {
   variants: {
     size: {
       small: "w-64",
@@ -49,7 +49,12 @@ const Accordion: React.FC<AccordionProps> = ({ items, color, textColor }) => {
   };
 
   return (
-    <div className={accordionStyles({ color, textColor })}>
+    <div
+      className={`${accordionStyles({
+        color,
+        textColor,
+      })} divide-y divide-gray-200`}
+    >
       {items.map((item, index) => (
         <div key={index}>
           <div
@@ -63,17 +68,13 @@ const Accordion: React.FC<AccordionProps> = ({ items, color, textColor }) => {
             <h3 className="text-lg font-semibold">{item.title}</h3>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className={`h-6 w-6 no-underline transition-transform ${
+              className={`h-6 w-6 transition-transform ${
                 activeIndex === index ? "transform rotate-180" : ""
               }`}
               viewBox="0 0 20 20"
               fill="currentColor"
             >
-              <path
-                fillRule="evenodd"
-                d="M10 12a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414L10 10.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-3 3a1 1 0 0 1-.707.293z"
-                clipRule="evenodd"
-              />
+              <path d="M10 12a1 1 0 01-.707-.293l-3-3a1 1 0 111.414-1.414L10 10.586l2.293-2.293a1 1 0 011.414 1.414l-3 3a1 1 0 01-.707.293z" />
             </svg>
           </div>
           <div

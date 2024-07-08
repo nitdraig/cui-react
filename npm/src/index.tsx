@@ -1,5 +1,5 @@
 export { default as Accordion } from "./components/ui/Accordion/Accordion";
-export { default as Buttons } from "./components/ui/Buttons/Button";
+export { default as Button } from "./components/ui/Button/Button";
 export { default as Card } from "./components/ui/Card/Card";
 export { default as TextCard } from "./components/ui/Card/TextCard";
 export { default as OverlayCard } from "./components/ui/Card/OverlayCard";
