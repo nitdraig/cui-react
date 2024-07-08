@@ -11,19 +11,19 @@ const config: DocsThemeConfig = {
       <meta httpEquiv="Content-Language" content="en" />
       <meta
         name="description"
-        content="Mailprex is a service designed to facilitate sending emails from web forms."
+        content="C-UI is a component UI library for React, designed to simplify the creation of beautiful and responsive user interfaces."
       />
       <meta
         name="og:description"
-        content="Mailprex is a service designed to facilitate sending emails from web forms."
+        content="C-UI is a component UI library for React, designed to simplify the creation of beautiful and responsive user interfaces."
       />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:image" content="" />
-      <meta name="twitter:site:domain" content="mailprex.top" />
-      <meta name="twitter:url" content="https://mailprex.top" />
-      <meta name="og:title" content="Nextra" />
+      <meta name="twitter:site:domain" content="c-ui.agustin.top" />
+      <meta name="twitter:url" content="https://c-ui.agustin.top" />
+      <meta name="og:title" content="C-UI" />
       <meta name="og:image" content="" />
-      <meta name="apple-mobile-web-app-title" content="Mailprex" />
+      <meta name="apple-mobile-web-app-title" content="C-UI" />
       <link
         rel="icon"
         href="https://res.cloudinary.com/draig/image/upload/v1720394895/cui/abkoe39iarlyr9cky2ke.ico"
@@ -79,15 +79,16 @@ const config: DocsThemeConfig = {
       </svg>
     ),
   },
+
   project: {
-    link: "https://github.com/nitdraig/usemailprex-hook",
+    link: "https://github.com/nitdraig/cui-react",
   },
 
   toc: {
     backToTop: true,
   },
 
-  docsRepositoryBase: "https://github.com/nitdraig/mailprex-docs",
+  docsRepositoryBase: "https://github.com/nitdraig/cui-react",
   footer: {
     text: (
       <span>
