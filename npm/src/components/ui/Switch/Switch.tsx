@@ -4,12 +4,16 @@ interface SwitchProps {
   label: string;
   initialChecked?: boolean;
   onChange: (checked: boolean) => void;
+  activeColor?: "white" | "black" | "primary" | "secondary";
+  inactiveColor?: "white" | "black" | "primary" | "secondary";
 }
 
 const Switch: React.FC<SwitchProps> = ({
   label,
   initialChecked = false,
   onChange,
+  activeColor = "primary",
+  inactiveColor = "secondary",
 }) => {
   const [checked, setChecked] = useState(initialChecked);
 
@@ -17,6 +21,23 @@ const Switch: React.FC<SwitchProps> = ({
     const newChecked = !checked;
     setChecked(newChecked);
     onChange(newChecked);
+  };
+
+  const getColorClass = (
+    color: "white" | "black" | "primary" | "secondary"
+  ) => {
+    switch (color) {
+      case "white":
+        return "bg-white border-2 border-gray-300";
+      case "black":
+        return "bg-black border-2 border-gray-300";
+      case "primary":
+        return "bg-blue-500  border-2 border-gray-300";
+      case "secondary":
+        return "bg-gray-600  border-2 border-gray-300";
+      default:
+        return "bg-blue-600  border-2 border-blue-300";
+    }
   };
 
   return (
@@ -31,12 +52,14 @@ const Switch: React.FC<SwitchProps> = ({
           />
           <div
             className={`block w-10 h-6 rounded-full ${
-              checked ? "bg-blue-500" : "bg-gray-600"
+              checked
+                ? getColorClass(activeColor)
+                : getColorClass(inactiveColor)
             }`}
           ></div>
           <div
             className={`dot absolute left-1 top-1 bg-white w-4 h-4 rounded-full transition transform ${
-              checked ? "translate-x-full bg-blue-500" : ""
+              checked ? "translate-x-full " + getColorClass(activeColor) : ""
             }`}
           ></div>
         </div>
