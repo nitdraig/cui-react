@@ -26,13 +26,11 @@
 C-UI is a component library built with Tailwind CSS and TypeScript for React and Next.js applications. It focuses on consistency, reusability, clarity, simplicity and adaptability to provide an excellent user and developer experience.
 
 ## Principles of design
-1.
-**Consistency**: Maintain a consistent appearance and behavior across all components.
-2. **Reuse**: Design components in a modular way to facilitate their reuse in different parts.
-3. **Clarity and Simplicity**: Prioritize simplicity and clarity in design to improve understanding and usability.
-4.
-**Adaptability**: Design components that can adapt to different devices and screen sizes.
-5. **Accessibility**: Ensure all components are accessible per WCAG guidelines.
+1.**Consistency**: Maintain a consistent appearance and behavior across all components.
+2.**Reuse**: Design components in a modular way to facilitate their reuse in different parts.
+3.**Clarity and Simplicity**: Prioritize simplicity and clarity in design to improve understanding and usability.
+4.**Adaptability**: Design components that can adapt to different devices and screen sizes.
+5.**Accessibility**: Ensure all components are accessible per WCAG guidelines.
 
 ## Facility
 ### Previous requirements
@@ -62,6 +60,49 @@ import { Button } from "cui-react";
 ```
 Fourth, Enjoy C-UI
 
+## Contributions
+Contributions are welcome! Please follow the steps below to contribute to the project.
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/nitdraig/cui-react.git
+
+cd cui-react
+```
+### Installation of Dependencies
+
+```bash
+npm install
+```
+
+### Project Structure
+
+```bash
+cui-react/
+    ├──docs/ 
+    ├──npm/
+        ├─ dist/ 
+        ├── src/
+        │   |
+        |   ├── ui/
+        |   |    ├── components/
+        |   |    |
+        │   │    ├── Button/
+        │   │    │   ├── Button.tsx
+        │   │    │   ├── index.ts
+        │   │    │   
+        │   │    └── Input/
+        │   │        ├── Input.tsx
+        │   │        ├── index.ts
+        │   │       
+        │   └── index.ts
+        ├── README.md
+        ├── postcss.config.js
+        ├── tailwind.config.js
+        ├── package.json
+        └── tsconfig.json
+```
 
 ## Contribution
 Contributions are welcome! Please follow the steps below to contribute to the project.
