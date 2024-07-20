@@ -27,6 +27,20 @@ Render a card:
   />
 </div>
 
+Code:
+
+```tsx
+
+  <Card
+    title="Sample Card"
+    description="This is a sample card component."
+    imageUrl="https://cdn.pixabay.com/photo/2020/05/24/11/24/strawberry-5213787_1280.jpg"
+    size="medium"
+    color="default"
+  />
+
+```
+
 
 ## Customizing
 You can customize the Card component using the following props:
@@ -39,17 +53,30 @@ color (optional): Border color variant of the card (default, primary, secondary,
 
 
 ## Example: Custom Size and Color
+Visual:
 
 <div style={{ maxWidth: '300px', margin: '0 auto' }}>
   <Card
     title="Another Card"
     description="This is another sample card component."
     imageUrl="https://cdn.pixabay.com/photo/2020/05/24/11/24/strawberry-5213787_1280.jpg"
-    size="large"
+    size="small"
     color="primary"
   />
 </div>
+Code:
 
+```tsx
+
+  <Card
+    title="Sample Card"
+    description="This is a sample card component."
+    imageUrl="https://cdn.pixabay.com/photo/2020/05/24/11/24/strawberry-5213787_1280.jpg"
+    size="small"
+    color="default"
+  />
+
+```
 
 ## This example renders a large card with a primary border color.
 
