@@ -1,0 +1,84 @@
+---
+title: Typing Effect
+---
+
+import {TypingEffect} from "cui-react";
+
+
+# TypingEffect
+
+The `TypingEffect` component renders a typing effect animation for a given text.
+
+## Import
+
+```tsx
+import {TypingEffect} from "cui-react";
+```
+
+## Example
+Render a basic typing effect:
+
+<TypingEffect text="Hello, world!" />
+
+Code:
+```tsx
+<TypingEffect text="Hello, world!" />
+```
+
+## Customizing
+You can customize the TypingEffect component using the following props:
+
+- `text (required):` The text to display with the typing effect.
+- `speed (optional):` The speed of typing in milliseconds. Defaults to 100.
+- `delay (optional):` The delay before starting to delete the text (if looping) in milliseconds. Defaults to 1000.
+- `loop (optional):` Whether the typing effect should loop. Defaults to false.
+- `cursorColor (optional):` The color of the cursor. Defaults to black.
+
+## Example: Custom Speed, Delay, and Loop
+
+<TypingEffect
+  text="This text will type and delete in a loop!"
+  speed={50}
+  delay={2000}
+  loop={true}
+  cursorColor="blue"
+/>
+
+
+Code: 
+```tsx
+<TypingEffect
+  text="This text will type and delete in a loop!"
+  speed={50}
+  delay={2000}
+  loop={true}
+  cursorColor="blue"
+/>
+```
+
+## This example renders a typing effect with custom speed, delay, and looping behavior.
+
+### Props
+- text
+Type: string
+Description: The text to display with the typing effect.
+
+- speed
+Type: number
+Default: 100
+Description: The speed of typing in milliseconds.
+
+- delay
+Type: number
+Default: 1000
+Description: The delay before starting to delete the text (if looping) in milliseconds.
+
+- loop
+Type: boolean
+Default: false
+Description: Whether the typing effect should loop.
+
+-cursorColor
+Type: string
+Default: black
+Description: The color of the cursor.

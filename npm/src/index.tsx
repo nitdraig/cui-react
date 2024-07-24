@@ -10,3 +10,4 @@ export { default as Select } from "./components/ui/Select/Select";
 export { default as Skeleton } from "./components/ui/Skeleton/Skeleton";
 export { default as Spinner } from "./components/ui/Spinner/Spinner";
 export { default as Switch } from "./components/ui/Switch/Switch";
+export { default as TypingEffect } from "./components/ui/TypingEffect/TypingEffect";

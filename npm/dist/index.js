@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Switch = exports.Spinner = exports.Skeleton = exports.Select = exports.Input = exports.CircularProgress = exports.HoverCard = exports.OverlayCard = exports.TextCard = exports.Card = exports.Button = exports.Accordion = void 0;
+exports.TypingEffect = exports.Switch = exports.Spinner = exports.Skeleton = exports.Select = exports.Input = exports.CircularProgress = exports.HoverCard = exports.OverlayCard = exports.TextCard = exports.Card = exports.Button = exports.Accordion = void 0;
 var Accordion_1 = require("./components/ui/Accordion/Accordion");
 Object.defineProperty(exports, "Accordion", { enumerable: true, get: function () { return __importDefault(Accordion_1).default; } });
 var Button_1 = require("./components/ui/Button/Button");
@@ -28,3 +28,5 @@ var Spinner_1 = require("./components/ui/Spinner/Spinner");
 Object.defineProperty(exports, "Spinner", { enumerable: true, get: function () { return __importDefault(Spinner_1).default; } });
 var Switch_1 = require("./components/ui/Switch/Switch");
 Object.defineProperty(exports, "Switch", { enumerable: true, get: function () { return __importDefault(Switch_1).default; } });
+var TypingEffect_1 = require("./components/ui/TypingEffect/TypingEffect");
+Object.defineProperty(exports, "TypingEffect", { enumerable: true, get: function () { return __importDefault(TypingEffect_1).default; } });
