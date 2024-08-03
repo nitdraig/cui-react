@@ -64,33 +64,33 @@ var GitHubStarsButton = function (_a) {
     var repoUrl = _a.repoUrl, _b = _a.buttonText, buttonText = _b === void 0 ? "Star" : _b, _c = _a.backgroundColor, backgroundColor = _c === void 0 ? "black" : _c, _d = _a.textColor, textColor = _d === void 0 ? "white" : _d, _e = _a.hoverBackgroundColor, hoverBackgroundColor = _e === void 0 ? "#374151" : _e, _f = _a.hoverTextColor, hoverTextColor = _f === void 0 ? "white" : _f, _g = _a.additionalClasses, additionalClasses = _g === void 0 ? "" : _g;
     var _h = (0, react_1.useState)(null), stars = _h[0], setStars = _h[1];
     var _j = (0, react_1.useState)(null), error = _j[0], setError = _j[1];
+    var fetchStars = function () { return __awaiter(void 0, void 0, void 0, function () {
+        var repoPath, response, data, err_1;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    _a.trys.push([0, 3, , 4]);
+                    repoPath = repoUrl.replace("https://github.com/", "");
+                    return [4 /*yield*/, fetch("https://api.github.com/repos/".concat(repoPath))];
+                case 1:
+                    response = _a.sent();
+                    if (!response.ok) {
+                        throw new Error("Failed to fetch stars");
+                    }
+                    return [4 /*yield*/, response.json()];
+                case 2:
+                    data = _a.sent();
+                    setStars(data.stargazers_count);
+                    return [3 /*break*/, 4];
+                case 3:
+                    err_1 = _a.sent();
+                    setError("Failed to fetch stars");
+                    return [3 /*break*/, 4];
+                case 4: return [2 /*return*/];
+            }
+        });
+    }); };
     (0, react_1.useEffect)(function () {
-        var fetchStars = function () { return __awaiter(void 0, void 0, void 0, function () {
-            var repoPath, response, data, err_1;
-            return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0:
-                        _a.trys.push([0, 3, , 4]);
-                        repoPath = repoUrl.replace("https://github.com/", "");
-                        return [4 /*yield*/, fetch("https://api.github.com/repos/".concat(repoPath))];
-                    case 1:
-                        response = _a.sent();
-                        if (!response.ok) {
-                            throw new Error("Failed to fetch stars");
-                        }
-                        return [4 /*yield*/, response.json()];
-                    case 2:
-                        data = _a.sent();
-                        setStars(data.stargazers_count);
-                        return [3 /*break*/, 4];
-                    case 3:
-                        err_1 = _a.sent();
-                        setError("Failed to fetch stars");
-                        return [3 /*break*/, 4];
-                    case 4: return [2 /*return*/];
-                }
-            });
-        }); };
         fetchStars();
     }, [repoUrl]);
     if (error) {

@@ -22,25 +22,23 @@ const GitHubStarsButton: React.FC<GitHubStarsButtonProps> = ({
   const [stars, setStars] = useState<number | null>(null);
   const [error, setError] = useState<string | null>(null);
 
-  useEffect(() => {
-    const fetchStars = async () => {
-      try {
-        const repoPath = repoUrl.replace("https://github.com/", "");
-        const response = await fetch(
-          `https://api.github.com/repos/${repoPath}`
-        );
+  const fetchStars = async () => {
+    try {
+      const repoPath = repoUrl.replace("https://github.com/", "");
+      const response = await fetch(`https://api.github.com/repos/${repoPath}`);
 
-        if (!response.ok) {
-          throw new Error("Failed to fetch stars");
-        }
-
-        const data = await response.json();
-        setStars(data.stargazers_count);
-      } catch (err) {
-        setError("Failed to fetch stars");
+      if (!response.ok) {
+        throw new Error("Failed to fetch stars");
       }
-    };
 
+      const data = await response.json();
+      setStars(data.stargazers_count);
+    } catch (err) {
+      setError("Failed to fetch stars");
+    }
+  };
+
+  useEffect(() => {
     fetchStars();
   }, [repoUrl]);
 
