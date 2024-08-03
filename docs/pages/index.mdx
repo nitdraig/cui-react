@@ -4,9 +4,10 @@ title: C-IU | Components UI Using Tailwind
 import { GitHubStarsButton } from "cui-react";
 import { useEffect, useState } from "react";
 import { Button } from "cui-react";
+import { useRouter } from 'next/router';
 
 export default function Home() {
-
+  const router = useRouter();
  
   return (
     <section className="flex flex-col md:flex-row items-center justify-center lg:h-screen h-full bg-gray-500 dark:bg-[#171717]">
