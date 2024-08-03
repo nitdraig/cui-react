@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.TypingEffect = exports.Switch = exports.Spinner = exports.Skeleton = exports.Select = exports.Input = exports.CircularProgress = exports.HoverCard = exports.OverlayCard = exports.TextCard = exports.Card = exports.Button = exports.Accordion = void 0;
+exports.TypingEffect = exports.Switch = exports.Spinner = exports.Skeleton = exports.Select = exports.Input = exports.GitHubStarsButton = exports.CircularProgress = exports.HoverCard = exports.OverlayCard = exports.TextCard = exports.Card = exports.Button = exports.Accordion = void 0;
 var Accordion_1 = require("./components/ui/Accordion/Accordion");
 Object.defineProperty(exports, "Accordion", { enumerable: true, get: function () { return __importDefault(Accordion_1).default; } });
 var Button_1 = require("./components/ui/Button/Button");
@@ -18,6 +18,8 @@ var HoverCard_1 = require("./components/ui/Card/HoverCard");
 Object.defineProperty(exports, "HoverCard", { enumerable: true, get: function () { return __importDefault(HoverCard_1).default; } });
 var CircularProgress_1 = require("./components/ui/CircularProgress/CircularProgress");
 Object.defineProperty(exports, "CircularProgress", { enumerable: true, get: function () { return __importDefault(CircularProgress_1).default; } });
+var GitHubStarsButton_1 = require("./components/ui/GitHubStarsButton/GitHubStarsButton");
+Object.defineProperty(exports, "GitHubStarsButton", { enumerable: true, get: function () { return __importDefault(GitHubStarsButton_1).default; } });
 var Input_1 = require("./components/ui/Input/Input");
 Object.defineProperty(exports, "Input", { enumerable: true, get: function () { return __importDefault(Input_1).default; } });
 var Select_1 = require("./components/ui/Select/Select");

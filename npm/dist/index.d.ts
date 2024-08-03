@@ -5,6 +5,7 @@ export { default as TextCard } from "./components/ui/Card/TextCard";
 export { default as OverlayCard } from "./components/ui/Card/OverlayCard";
 export { default as HoverCard } from "./components/ui/Card/HoverCard";
 export { default as CircularProgress } from "./components/ui/CircularProgress/CircularProgress";
+export { default as GitHubStarsButton } from "./components/ui/GitHubStarsButton/GitHubStarsButton";
 export { default as Input } from "./components/ui/Input/Input";
 export { default as Select } from "./components/ui/Select/Select";
 export { default as Skeleton } from "./components/ui/Skeleton/Skeleton";

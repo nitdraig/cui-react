@@ -1,0 +1,103 @@
+---
+title: GitHubStarsButton
+---
+
+import { GitHubStarsButton } from "cui-react";
+
+# GitHubStarsButton
+
+The `GitHubStarsButton` component displays a button that links to a GitHub repository and shows the current number of stars the repository has. It also includes customizable styles for the button and hover states.
+
+## Import
+
+```tsx
+import GitHubStarsButton from "./GitHubStarsButton";
+```
+
+## Example
+
+Render a basic GitHub stars button:
+Code:
+```tsx
+<GitHubStarsButton repoUrl="https://github.com/facebook/react" />
+```
+
+<GitHubStarsButton repoUrl="https://github.com/facebook/react" />
+### Customizing
+
+You can customize the `GitHubStarsButton` component using the following props:
+
+- `repoUrl` (required): The URL of the GitHub repository.
+- `buttonText` (optional): The text displayed on the button. Defaults to "Star".
+- `backgroundColor` (optional): The background color of the button. Defaults to `black`.
+- `textColor` (optional): The text color of the button. Defaults to `white`.
+- `hoverBackgroundColor` (optional): The background color of the button when hovered. Defaults to `#374151`.
+- `hoverTextColor` (optional): The text color of the button when hovered. Defaults to `white`.
+- `additionalClasses` (optional): Any additional CSS classes to apply to the button.
+
+### Example: Custom Styles
+Code:
+```tsx
+<GitHubStarsButton
+  repoUrl="https://github.com/facebook/react"
+  buttonText="Star on GitHub"
+  backgroundColor="blue"
+  textColor="white"
+  hoverBackgroundColor="darkblue"
+  hoverTextColor="yellow"
+  additionalClasses="my-custom-class"
+/>
+```
+Visual:
+<GitHubStarsButton
+  repoUrl="https://github.com/facebook/react"
+  buttonText="Star on GitHub"
+  backgroundColor="blue"
+  textColor="white"
+  hoverBackgroundColor="darkblue"
+  hoverTextColor="yellow"
+  additionalClasses="my-custom-class"
+/>
+
+
+This example renders a GitHub stars button with custom text, background color, text color, and additional CSS classes.
+
+## Props
+
+- **`repoUrl`**
+  - Type: `string`
+  - Description: The URL of the GitHub repository.
+
+- **`buttonText`**
+  - Type: `string`
+  - Default: `Star`
+  - Description: The text displayed on the button.
+
+- **`backgroundColor`**
+  - Type: `string`
+  - Default: `black`
+  - Description: The background color of the button.
+
+- **`textColor`**
+  - Type: `string`
+  - Default: `white`
+  - Description: The text color of the button.
+
+- **`hoverBackgroundColor`**
+  - Type: `string`
+  - Default: `#374151`
+  - Description: The background color of the button when hovered.
+
+- **`hoverTextColor`**
+  - Type: `string`
+  - Default: `white`
+  - Description: The text color of the button when hovered.
+
+- **`additionalClasses`**
+  - Type: `string`
+  - Description: Any additional CSS classes to apply to the button.
+
+## Notes
+
+- The component fetches the number of stars from the GitHub API. If there is an error fetching the stars, it will display an error message.
+- The button includes an SVG icon for the GitHub logo and displays the star count next to the button text.
