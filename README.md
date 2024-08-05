@@ -83,31 +83,100 @@ npm install
 
 ### Project Structure
 
-```bash
-cui-react/
-    ├──docs/ 
-    ├──npm/
-        ├─ dist/ 
-        ├── src/
-        │   |
-        |   ├── ui/
-        |   |    ├── components/
-        |   |    |
-        │   │    ├── Button/
-        │   │    │   ├── Button.tsx
-        │   │    │   ├── index.ts
-        │   │    │   
-        │   │    └── Input/
-        │   │        ├── Input.tsx
-        │   │        ├── index.ts
-        │   │       
-        │   └── index.ts
-        ├── README.md
-        ├── postcss.config.js
-        ├── tailwind.config.js
-        ├── package.json
-        └── tsconfig.json
 ```
-
+└── 📁cui-react
+    └── .gitignore
+    └── CODE_OF_CONDUCT.md
+    └── 📁docs
+        └── .gitignore
+        └── next-env.d.ts
+        └── next.config.js
+        └── package-lock.json
+        └── package.json
+        └── 📁pages
+            └── 404.mdx
+            └── 📁docs
+                └── 📁Components
+                    └── Accordion.mdx
+                    └── Buttons.mdx
+                    └── 📁Cards
+                        └── Card.mdx
+                        └── HoverCard.mdx
+                        └── OverlayCard.mdx
+                    └── GitHubStarsButton.mdx
+                    └── Input.mdx
+                    └── Progress.mdx
+                    └── Select.mdx
+                    └── Skeleton.mdx
+                    └── Spinner.mdx
+                    └── Switch.mdx
+                    └── TypingEfect.mdx
+                └── index.mdx
+            └── index.mdx
+            └── index.module.css
+            └── _app.mdx
+            └── _meta.json
+        └── postcss.config.js
+        └── 📁public
+            └── github.svg
+            └── intro.mp4
+            └── logo.png
+        └── README.md
+        └── style.css
+        └── tailwind.config.js
+        └── theme.config.tsx
+        └── tsconfig.json
+    └── LICENSE
+    └── 📁npm
+        └── .gitignore
+        └── .npmignore
+        └── LICENSE
+        └── package-lock.json
+        └── package.json
+        └── postcss.config.js
+        └── README.md
+        └── 📁src
+            └── 📁components
+                └── 📁ui
+                    └── 📁Accordion
+                        └── Accordion.tsx
+                        └── index.ts
+                    └── 📁Button
+                        └── Button.tsx
+                        └── index.ts
+                    └── 📁Card
+                        └── Card.tsx
+                        └── HoverCard.tsx
+                        └── index.ts
+                        └── OverlayCard.tsx
+                        └── TextCard.tsx
+                    └── 📁CircularProgress
+                        └── CircularProgress.tsx
+                        └── index.ts
+                    └── 📁GitHubStarsButton
+                        └── GitHubStarsButton.tsx
+                    └── 📁Input
+                        └── index.ts
+                        └── Input.tsx
+                    └── 📁Select
+                        └── index.ts
+                        └── Select.tsx
+                    └── 📁Skeleton
+                        └── index.ts
+                        └── Skeleton.tsx
+                    └── 📁Spinner
+                        └── index.ts
+                        └── Spinner.tsx
+                    └── 📁Switch
+                        └── index.ts
+                        └── Switch.tsx
+                    └── 📁TypingEffect
+                        └── index.ts
+                        └── TypingEffect.tsx
+            └── index.tsx
+        └── tailwind.config.js
+        └── tsconfig.json
+    └── README.md
+```
 ## Contribution
 Contributions are welcome! Please follow the steps below to contribute to the project.
