@@ -24,8 +24,6 @@
 
 [![npm version](https://img.shields.io/npm/dm/cui-react.svg?style=flat-square)](https://www.npmjs.com/package/cui-react)
 [![npm downloads](https://img.shields.io/npm/dm/cui-react.svg?style=flat-square)](https://www.npmjs.com/package/cui-react)
-[![size](https://img.shields.io/bundlephobia/minzip/cui-react.svg?style=flat)](https://bundlephobia.com/result?p=cui-react)
-
 
 ## Introduction
 C-UI is a component library built with Tailwind CSS and TypeScript for React and Next.js applications. It focuses on consistency, reusability, clarity, simplicity and adaptability to provide an excellent user and developer experience.

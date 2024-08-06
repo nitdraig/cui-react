@@ -25,7 +25,6 @@
 
 [![npm version](https://img.shields.io/npm/dm/cui-react.svg?style=flat-square)](https://www.npmjs.com/package/cui-react)
 [![npm downloads](https://img.shields.io/npm/dm/cui-react.svg?style=flat-square)](https://www.npmjs.com/package/cui-react)
-[![size](https://img.shields.io/bundlephobia/minzip/cui-react.svg?style=flat)](https://bundlephobia.com/result?p=cui-react)
 
 
 ## Installation
