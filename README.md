@@ -22,7 +22,7 @@
 
 # C-UI
 
-[![npm version](https://img.shields.io/npm/dm/cui-react.svg?style=flat-square)](https://www.npmjs.com/package/cui-react)
+[![npm version](https://img.shields.io/npm/v/cui-react.svg?style=flat-square)](https://www.npmjs.com/package/cui-react)
 [![npm downloads](https://img.shields.io/npm/dm/cui-react.svg?style=flat-square)](https://www.npmjs.com/package/cui-react)
 
 ## Introduction
